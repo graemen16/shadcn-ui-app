@@ -1,3 +1,9 @@
+# Example with AutoComplete Input
+
+Demonstrate / includes an input with autocomplete with datalist set
+from an array of strings.
+Wraps shadcn-ui Input.
+
 # next-template
 
 A Next.js 13 template for building apps with Radix UI and Tailwind CSS.

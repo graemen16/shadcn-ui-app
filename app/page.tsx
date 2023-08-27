@@ -1,10 +1,24 @@
+"use client"
+
+import React from "react"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { AutoCompleteInput } from "@/components/autocomplete-input"
 
 export default function IndexPage() {
+  let autoCompleteList: string[] = [
+    "Chocolate",
+    "Coconut",
+    "Mint",
+    "Strawberry",
+    "Vanilla",
+  ]
+
   return (
+    <div>
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
@@ -34,6 +48,19 @@ export default function IndexPage() {
           GitHub
         </Link>
       </div>
+      </section>
+      <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+      <div className="flex items-center space-x-2">
+        <AutoCompleteInput
+          autoCompleteList={autoCompleteList}
+          type="text"
+          id="text"
+          placeholder="Type or Choose..."
+          name="ice-cream-choice"
+        />
+        <Button type="submit">Place Order</Button>
+      </div>
     </section>
+    </div>
   )
 }
