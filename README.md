@@ -1,8 +1,13 @@
 # Example with AutoComplete Input
 
 Demonstrate / includes an input with autocomplete with datalist set
-from an array of strings.
-Wraps shadcn-ui Input.
+from an array of strings. Populates datalist document element and
+associates this with the input.
+- Wraps shadcn-ui Input.
+- user can chose from the auto-complete list but input is not constrained
+- see components\autocomplete-input.tsx
+- pass array of strings as autoCompleteList prop
+- not sure on a sensible / practical limit for the array size.
 
 # next-template
 

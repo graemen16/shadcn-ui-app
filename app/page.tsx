@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { AutoCompleteInput } from "@/components/autocomplete-input"
 
 export default function IndexPage() {
-  let autoCompleteList: string[] = [
+  const autoCompleteList: string[] = [
     "Chocolate",
     "Coconut",
     "Mint",
