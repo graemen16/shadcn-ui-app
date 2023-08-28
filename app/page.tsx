@@ -50,16 +50,6 @@ export default function IndexPage() {
       </div>
       </section>
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex items-center space-x-2">
-        <AutoCompleteInput
-          autoCompleteList={autoCompleteList}
-          type="text"
-          id="text"
-          placeholder="Type or Choose..."
-          name="ice-cream-choice"
-        />
-        <Button type="submit">Place Order</Button>
-      </div>
     </section>
     </div>
   )
